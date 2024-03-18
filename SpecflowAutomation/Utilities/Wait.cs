@@ -30,7 +30,7 @@ namespace SpecflowAutomation.Utilities
         }
         public static void WaitToExist(IWebDriver driver, string locatorType, string locatorValue, int seconds)
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
             //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("")));
 
             if (locatorType == "XPath")
